@@ -1,0 +1,39 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h4{
+    text-align: center;
+}
+
+.carousel{
+    background-color: rgb(58, 57, 57);
+    height: 75vh!important;
+}
+.cards{
+    display: flex;
+}
+.cards div{
+    margin: 1rem;
+}
+.carousel a{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.text-content{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.parallax-container {
+    height: 20rem;
+}
