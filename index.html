@@ -11,28 +11,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
         <!-- Icons Materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Cdn.Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- style n Scrpits locals -->
     <link rel="stylesheet" href="/style.css">
     <script src="./scripts.js"></script>
     <title>RexArt</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo right">Logo</a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
+    <!-- NavBar -->
+    <div class="nav-content">
+        <div class="nav-items">
+            <div class="nav-links">
+                <a href="index.html"> MKT </a>
+                <a href="index.html"> PUBL </a>
+                <a href="index.html"> WEB </a>
+                <a href="index.html"> DSGN </a>
+            </div>            
+            <a href="index.html" class="nav-logo"> 
+                <img class="logoImg" src="./Img/IsoDino.png" alt="LogoText"> 
+            </a>
         </div>
-    </nav>
+    </div>
 
-        <!-- Content primordial -->
+    <!-- autoplay loop -->
+    <video id="videoRex" src="/Img/RexPage.mp4" autoplay width="100%">  
+        <img src="/Img/BgImg.png" alt="Video no soportado" />   
+    </video>
+
+    <!-- -------------- Aspirational ------------------- -->
     <main>
+        <div class="cardsAspirational">    
+            <div class="cardAOne">
+                <img class="cardAOneImg" src="./Img/Cafeteria .jpeg">
+                <div class="cardAOneContentText">
+                    <h2> Nuestra caza favorita ... </h2>
+                    <h3> Enfoque sobre la meta </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi provident quas vel magni. Incidunt labore doloremque veritatis excepturi commodi perferendis alias, numquam veniam vitae sunt eius rem quisquam tenetur.
+                    </p>
+                </div>
+            </div>
 
-        <div class="carousel carousel-slider" >
-            <div class="carousel-fixed-item "> </div>
+            <div class="cardATwo">
+                <img class="cardATwoImg" src="./Img/Market.jpeg">
+                
+            </div>
+            <div class="cardATwoContentText">
+                <h3> Alcance de publico objetivo </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi provident quas vel magni. Incidunt labore doloremque veritatis excepturi commodi perferendis alias, numquam veniam vitae sunt eius rem quisquam tenetur.
+                </p>
+            </div>
+
+            <div class="cardAThree">
+                <div class="cardAThreeContentText">
+                    <h3> Desgarrar el mercado </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi provident quas vel magni. Incidunt labore doloremque veritatis excepturi commodi perferendis alias, numquam veniam vitae sunt eius rem quisquam tenetur. <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde laudantium porro ad. Ab vitae corrupti error, facere maiores repudiandae earum pariatur porro corporis inventore a culpa esse sapiente odit eum. <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis qui dignissimos nisi dolores molestias impedit, assumenda esse optio doloribus doloremque veritatis sequi sint voluptas repudiandae possimus minus itaque, nobis recusandae.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- -------------- About Us ------------------- -->
+
+        <div class="aboutContent">
+            <P>
+                Comenzar un proyecto nuevo es siempre un gran desafío, son muchas las preguntas que surgen a la hora de arrancar. Por ese motivo estamos aquí, brindando las herramientas necesarias para ayudar a encontrar el camino ideal dentro de tu proyecto y así lograr todos los objetivos trazados para hacer de tu marca un entorno de exito.
+            </P>
+            <img src="/Img/signature.png" alt="signature">
+        </div>
+
+        <!-- <div class="carousel carousel-slider" >
+            <div class="carousel-fixed-item"> </div>
             <a class="carousel-item" href="#one!"><img src="./Img/D1.jpeg"></a>
             <a class="carousel-item" href="#two!"><img src="./Img/D2.jpeg "></a>
             <a class="carousel-item" href="#three!"><img src="./Img/D3.jpeg "></a>
@@ -40,9 +95,9 @@
             <a class="carousel-item" href="#five!"><img src="./Img/D5.jpeg "></a>
         </div>
 
-        <h4> Cards informativas </h4>
+        <h4> Cards informativas </h4> -->
             <!-- cards -->
-        <div class="cards">
+        <!-- <div class="cards">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="/Img/D1.jpeg">
@@ -84,10 +139,10 @@
                     <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
-        <div class="text-content"> 
+        <!-- <div class="text-content"> 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus maxime at sed ipsam nesciunt, architecto, error quasi vitae magnam doloremque et eveniet. Quisquam eius voluptate sequi, distinctio voluptatem aspernatur!
             </p>
@@ -117,13 +172,14 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia quasi! Impedit obcaecati ullam sunt, nostrum exercitationem ea voluptates, officia commodi, repellat qui optio possimus debitis libero labore aliquam esse. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vitae saepe cupiditate voluptate accusamus ipsum omnis, aliquam aperiam provident modi dicta at molestiae dignissimos veniam facilis illum culpa, aliquid tenetur!
             </p>
-        </div>
+        </div> -->
 
             <!-- Float Btn -->
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large red pulse">
-                <i class="large material-icons">share</i>
-            </a>
+        <!-- <div class="fixed-action-btn">
+            <button class="btn-floating btn-large bColor pulse" id="playV"> -->
+                <!-- share -->
+                <!-- <i class="large material-icons"> play_circle_outline </i>
+            </button>
             <ul>
                 <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
                 <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
@@ -131,7 +187,7 @@
                 <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
             </ul>
         </div>
-    </main>
+    </main> -->
         <!-- footer -->
     <footer class="page-footer">
         <div class="container">
